@@ -1,16 +1,31 @@
+import dynamic from "next/dynamic";
+import Landing from "../components/layouts/Landing";
+import CountryTable from "../components/elements/CountryTable";
+import Statistic from "../components/layouts/pieces/Statistic";
+const Mapbox = dynamic(() => import("../components/elements/Mapbox"), {
+  ssr: false,
+});
+
 export default function Home() {
-  const host = process.env.HOST;
   return (
-    <div className="flex items-center justify-center w-screen min-h-screen text-gray-700 bg-base md:w-full">
-      <div className="container w-full px-4 mx-auto md:w-4/5 lg:w-3/5">
-        <div className="grid items-center grid-cols-1 gap-y-5">
-          <div className="flex flex-col text-center gap-y-4">
-            <h1 className="text-3xl font-bold md:text-5xl 2xl:text-7xl">
-              Sainseni Starter {host}
-            </h1>
+    <div className="bg-basecolor">
+      <Landing>
+        <section className="flex justify-center bg-primary">
+          <Mapbox />
+        </section>
+
+        <section className="flex flex-col justify-center px-4 bg-basecolor">
+          <div className="container pt-6 mx-auto space-y-6 2xl:px-12">
+            <Statistic />
           </div>
-        </div>
-      </div>
+        </section>
+
+        <section className="flex justify-center px-4 pt-12 bg-basecolor">
+          <div className="container mx-auto space-y-8 2xl:px-12">
+            <CountryTable />
+          </div>
+        </section>
+      </Landing>
     </div>
   );
 }
