@@ -11,7 +11,6 @@ import {
 } from "@heroicons/react/solid";
 import { nFormatter } from "../../utils/helper";
 export default function Mapbox() {
-  // const [showPopup, togglePopup] = useState(false);
   const setdefault = {
     name: "Indonesia",
     flag: "https://disease.sh/assets/img/flags/id.png",
@@ -22,6 +21,7 @@ export default function Mapbox() {
     recovered: null,
     deaths: null,
   };
+
   const setviewport = {
     viewport: {
       width: 400,
@@ -33,10 +33,7 @@ export default function Mapbox() {
       pitch: 0,
     },
   };
-  let bounds = [
-    [-90, -90], // Southwest coordinates
-    [90, 90], // Northeast coordinates
-  ];
+
   const [currentCountry, setCurrentCountry] = useState(
     typeof window !== "undefined" &&
       JSON.parse(localStorage.getItem("current_country")) !== null
@@ -134,17 +131,6 @@ export default function Mapbox() {
         transitionDuration="auto"
         transitionInterpolator={new FlyToInterpolator({ speed: 1.2 })}
       >
-        {/* {showPopup && (
-          <Popup
-            latitude={currentCountry.lat}
-            longitude={currentCountry.long}
-            closeButton={true}
-            closeOnClick={false}
-            onClose={() => togglePopup(false)}
-          >
-            <div className="w-12 h-12">{currentCountry.name}</div>
-          </Popup>
-        )} */}
         {markers}
       </ReactMapGL>
       <div className="absolute top-0 right-0 mt-16 mr-0 w-36 md:mt-28 md:right-16 lg:w-72 h-72">

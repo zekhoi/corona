@@ -1,8 +1,8 @@
 import { useEffect, useState } from "react";
 import { getAllData, getHistoricalData } from "../../../utils/data";
-import CaseCard from "../../elements/CaseCard";
-import StatisticCard from "../../elements/StatisticCard";
-import CaseChartCard from "../../elements/CaseChartCard";
+import CaseCard from "../../commons/CaseCard";
+import StatisticCard from "../../commons/StatisticCard";
+import CaseChartCard from "../../commons/CaseChartCard";
 
 export default function Statistic() {
   const [covidData, setCovidData] = useState({

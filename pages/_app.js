@@ -1,9 +1,13 @@
 import "../styles/globals.css";
 import "../styles/mapbox.css";
 import Script from "next/script";
+import { DefaultSeo } from "next-seo";
+import SEO from "../next-seo.config";
+
 function MyApp({ Component, pageProps }) {
   return (
     <>
+      <DefaultSeo {...SEO} />
       <Component {...pageProps} />
       <Script
         type="module"
