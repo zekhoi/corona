@@ -1,8 +1,8 @@
 import dynamic from "next/dynamic";
 import Landing from "../components/layouts/Landing";
-import CountryTable from "../components/elements/CountryTable";
+import CountryTable from "../components/commons/CountryTable";
 import Statistic from "../components/layouts/pieces/Statistic";
-const Mapbox = dynamic(() => import("../components/elements/Mapbox"), {
+const Mapbox = dynamic(() => import("../components/commons/Mapbox"), {
   ssr: false,
 });
 
