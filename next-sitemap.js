@@ -1,5 +1,5 @@
 export default {
-  siteUrl: process.env.HOSTNAME,
+  siteUrl: process.env.MYDOMAIN,
   changefreq: "daily",
   priority: 0.7,
   sitemapSize: 5000,

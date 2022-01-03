@@ -2,16 +2,16 @@ export default {
   title: "Coronavirus - Khoironi Kurnia Syah",
   description:
     "Track the corona virus over the world. Find the detail every country about the virus now.",
-  canonical: process.env.HOSTNAME,
+  canonical: process.env.MYDOMAIN,
   noindex: false,
   openGraph: {
-    url: process.env.HOSTNAME,
+    url: process.env.MYDOMAIN,
     title: "Coronavirus - Khoironi Kurnia Syah",
     description:
       "Track the corona virus over the world. Find the detail every country about the virus now.",
     images: [
       {
-        url: process.env.HOSTNAME + "/images/corona-tracker.png",
+        url: process.env.MYDOMAIN + "/images/corona-tracker.png",
         width: 1920,
         height: 1080,
         alt: "Track the corona virus over the world.",
