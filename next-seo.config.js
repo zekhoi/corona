@@ -11,7 +11,7 @@ export default {
       "Track the corona virus over the world. Find the detail every country about the virus now.",
     images: [
       {
-        url: "/images/corona-tracker.png",
+        url: process.env.HOSTNAME + "/images/corona-tracker.png",
         width: 1920,
         height: 1080,
         alt: "Track the corona virus over the world.",
