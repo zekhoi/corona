@@ -70,19 +70,19 @@ export default function Navbar() {
                 href="https://www.youtube.com/watch?v=FC4soCjxSOQ"
                 passHref={true}
               >
-                <div className="flex flex-row items-center space-x-2 cursor-pointer hover:text-gray-300 focus:outline-none focus:shadow-outline">
+                <a className="flex flex-row items-center space-x-2 hover:text-gray-300">
                   <PlayIcon className="w-7 h-7" />
                   <a>How to protect yourself</a>
-                </div>
+                </a>
               </Link>
             </div>
             <Link
               href="https://www.cdc.gov/coronavirus/2019-ncov/symptoms-testing/coronavirus-self-checker.html"
               passHref={true}
             >
-              <button className="py-2 border border-white rounded-md cursor-pointer hover:bg-primary bg-secondary md:px-5 md:mx-2 focus:outline-none focus:shadow-outline">
+              <a className="py-2 border border-white rounded-md cursor-pointer hover:bg-primary bg-secondary md:px-5 md:mx-2 focus:outline-none focus:shadow-outline">
                 Are you sick?
-              </button>
+              </a>
             </Link>
           </nav>
         </div>
