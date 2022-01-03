@@ -1,4 +1,5 @@
-module.exports = {
+export default {
+  siteUrl: process.env.HOSTNAME,
   changefreq: "daily",
   priority: 0.7,
   sitemapSize: 5000,
