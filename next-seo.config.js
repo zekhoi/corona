@@ -12,8 +12,8 @@ export default {
     images: [
       {
         url: process.env.MYDOMAIN + "/images/corona-tracker.png",
-        width: 1920,
-        height: 1080,
+        width: 1200,
+        height: 630,
         alt: "Track the corona virus over the world.",
       },
     ],
