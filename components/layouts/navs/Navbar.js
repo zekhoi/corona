@@ -72,7 +72,7 @@ export default function Navbar() {
               >
                 <a className="flex flex-row items-center space-x-2 hover:text-gray-300">
                   <PlayIcon className="w-7 h-7" />
-                  <a>How to protect yourself</a>
+                  <span>How to protect yourself</span>
                 </a>
               </Link>
             </div>
