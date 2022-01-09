@@ -35,8 +35,8 @@ export default function Navbar() {
   return (
     <>
       <div
-        className={`fixed w-full z-10 md:py-0 top-0 text-white transition-all duration-500 ${
-          scroll ? "py-4 bg-primary bg-opacity-50" : "py-3 shadow-md bg-primary"
+        className={`fixed w-full z-10 md:py-0 top-0 text-white shadow-md bg-primary transition-all duration-500 ${
+          scroll ? "py-4 " : "py-3"
         }`}
       >
         <div className="container px-4 mx-auto md:flex md:items-center">
