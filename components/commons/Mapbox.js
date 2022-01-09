@@ -28,7 +28,7 @@ export default function Mapbox() {
       height: 240,
       latitude: -5,
       longitude: 120,
-      zoom: 3,
+      zoom: 8,
       bearing: 0,
       pitch: 0,
     },
