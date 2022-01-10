@@ -1,5 +1,5 @@
 export default {
-  title: "Coronavirus - Khoironi Kurnia Syah",
+  title: "Coronavirus | Khoironi Kurnia Syah",
   description:
     "Track the corona virus over the world. Find the detail every country about the virus now.",
   canonical: process.env.MYDOMAIN,
